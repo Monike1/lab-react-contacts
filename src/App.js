@@ -57,16 +57,6 @@ class App extends Component {
     })
   }
 
-  // handleClickDelete = (e) => {
-  //   let editedByDeletingContacts = [...this.state.contacts];
-  //   let index = editedByDeletingContacts.prototype.slice.call(el.parentElement.children).indexOf(el)
-  //   // let contactIndex = editedByDeletingContacts.indexOf(e);
-  //   editedByDeletingContacts.splice(index, 1);
-  //   this.setState({
-  //     contacts: editedByDeletingContacts
-  //   });
-  // }
-
   render() {
    console.log(this.state.contacts)
     return (
@@ -108,41 +98,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-// -------------------------------------------------------
-
-// import React, { Component } from 'react';
-// import Task from "./Task"
-
-// class App extends Component {
-//   constructor() {
-//     super()
-//     this.updateContacts = this.updateContacts.bind(this)
-//   }
-
-//   state = {contacts: ["Getting Coffee", "Task2", "Task3", "Getting Coffee"]}
-
-//   updateContacts(indexN) {
-//     /***  
-//       State shouldn't be modified directly and splice 
-//       modifies the orginal array it's called on. 
-//       Therefore we're using the spread operator to copy the array first. ;)
-//     ***/
-//     var newContactList = [...this.state.tasks]
-//     newContactList.splice(indexN, 1)
-//     this.setState({contacts: newContactList})
-//   }
-
-//   render() {
-//     return (
-//       <div>
-//         {this.state.tasks.map((aTask, index) => 
-//           <Task index={index.toString()} deleteTask={this.updateToDoList} taskName={aTask} />
-//         )}
-//       </div>
-//     )
-//   }
-// }
-
-// export default ToDo;
